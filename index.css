@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+        
+        :root {
+            --primary: #c8102e; 
+            --accent: #f4a261;
+            --dark: #1a1a1a;
+            --warm-bg: #2c221f;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--warm-bg);
+            color: #f0e6d2;
+            line-height: 1.6;
+        }
+        
+        header.hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(28, 22, 19, 0.85)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Gabe_Newell_-_2002_%28cropped%29.jpg/1200px-Gabe_Newell_-_2002_%28cropped%29.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: #fff;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 5rem 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+            margin: 1rem auto;
+        }
+        
+        .tribute {
+            background-color: #3a2f2a;
+            border-left: 8px solid var(--primary);
+        }
+        
+        .tribute p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .game-card {
+            background-color: #3a2f2a;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 30px rgba(200, 16, 46, 0.3);
+        }
+        
+        .game-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .game-info {
+            padding: 1.5rem;
+        }
+        
+        .game-info h3 {
+            color: #fff;
+            margin-bottom: 0.8rem;
+            font-size: 1.5rem;
+        }
+        
+        .game-info p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #d4c3a3;
+        }
+        
+        .game-info a {
+            color: red;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .game-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .facts {
+            background-color: #2c221f;
+        }
+        
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .fact {
+            background: #3a2f2a;
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 5px solid var(--primary);
+            margin-top: 1rem;;
+        }
+        li{
+            display: flex;
+        }
+        ul {
+            display: flex;
+           list-style-type: none;
+           margin-right: 15px; 
+        }
+        
+        ul a:hover{
+            text-decoration: underline;
+            color: #f4a261;
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #999;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.95);
+            z-index: 100;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+        
+        .steam-logo {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
