@@ -76,13 +76,13 @@
             display: block;
             width: 80px;
             height: 3px;
-            background: var(--primary);
+            background: var(--accent);
             margin: 1rem auto;
         }
         
         .tribute {
             background-color: #3a2f2a;
-            border-left: 8px solid var(--primary);
+            border-left: 8px solid var(--accent);
         }
         
         .tribute p {
@@ -100,7 +100,7 @@
         
         .game-card {
             background-color: #3a2f2a;
-            border-radius: 12px;
+            border-radius: 3px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -133,7 +133,7 @@
         }
         
         .game-info a {
-            color: red;
+            color: rgb(255, 208, 0);
             text-decoration: none;
             font-weight: 500;
         }
@@ -155,7 +155,7 @@
         .fact {
             background: #3a2f2a;
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 3px;
             border-top: 5px solid var(--primary);
             margin-top: 1rem;;
         }
@@ -200,6 +200,6 @@
         
         .steam-logo {
             font-weight: bold;
-            color: var(--primary);
+            color: burlywood;
             font-size: 1.4rem;
         }
