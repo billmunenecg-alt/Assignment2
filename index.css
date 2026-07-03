@@ -156,7 +156,7 @@
             background: #3a2f2a;
             padding: 2rem;
             border-radius: 3px;
-            border-top: 5px solid var(--primary);
+            border-top: 5px solid var(--accent);
             margin-top: 1rem;;
         }
         li{
